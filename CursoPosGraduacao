@@ -1,0 +1,16 @@
+class CursoPosGraduacao extends Curso {
+ 
+    private String tipo;       
+    private String areaPesquisa;
+ 
+    public CursoPosGraduacao(String nome, String modalidade, String status,
+                             String tipo, String areaPesquisa) {
+        super(nome, modalidade, status);
+        this.tipo         = tipo;
+        this.areaPesquisa = areaPesquisa;
+    }
+ 
+    public void validarDissertacao() {
+        System.out.println("Validando dissertação da área: " + areaPesquisa);
+    }
+}
