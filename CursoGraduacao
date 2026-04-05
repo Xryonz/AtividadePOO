@@ -1,0 +1,21 @@
+public class CursoGraduacao extends Curso {
+ 
+    private String  tipo;          
+    private boolean tccObrigatorio;
+ 
+    public CursoGraduacao(String nome, String modalidade, String status,
+                          String tipo, boolean tccObrigatorio) {
+        super(nome, modalidade, status);
+        this.tipo           = tipo;
+        this.tccObrigatorio = tccObrigatorio;
+    }
+ 
+    public void validarTCC() {
+        if (tccObrigatorio) {
+            System.out.println("TCC é obrigatório neste curso.");
+        } else {
+            System.out.println("TCC não é obrigatório neste curso.");
+        }
+    }
+}
+ 
