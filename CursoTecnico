@@ -1,0 +1,21 @@
+public class CursoTecnico extends Curso {  
+ 
+    String eixoTecnologico;
+    boolean estagioObrigatorio;
+ 
+    public CursoTecnico(String nome, String modalidade, String status,
+                        String eixoTecnologico, boolean estagioObrigatorio) {
+  
+        super(nome, modalidade, status);
+        this.eixoTecnologico    = eixoTecnologico;
+        this.estagioObrigatorio = estagioObrigatorio;
+    }
+ 
+    public void verificarEstagio() {
+        if (estagioObrigatorio) {
+            System.out.println("Este curso EXIGE estágio.");
+        } else {
+            System.out.println("Este curso NÃO exige estágio.");
+        }
+    }
+}
