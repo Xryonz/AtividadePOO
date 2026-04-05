@@ -1,0 +1,22 @@
+ public class Curso {
+ 
+    String nome;
+    String modalidade; // "presencial" ou "EAD"
+    String status;     // "ativo" ou "inativo"
+ 
+    // Construtor: serve para criar um curso passando os dados
+    public Curso(String nome, String modalidade, String status) {
+        this.nome       = nome;
+        this.modalidade = modalidade;
+        this.status     = status;
+    }
+ 
+    public void obterDisciplinas() {
+        System.out.println("Buscando disciplinas do curso: " + nome);
+    }
+ 
+    public void obterAlunosAtivos() {
+        System.out.println("Buscando alunos ativos do curso: " + nome);
+    }
+}
+ 
