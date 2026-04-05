@@ -1,6 +1,6 @@
  public class Curso {
  
-    privateString nome;
+    private String nome;
     private String modalidade; 
     private String status;    
  
