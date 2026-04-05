@@ -1,8 +1,8 @@
  public class Curso {
  
-    String nome;
-    String modalidade; 
-    String status;    
+    privateString nome;
+    private String modalidade; 
+    private String status;    
  
    
     public Curso(String nome, String modalidade, String status) {
