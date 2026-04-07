@@ -1,21 +1,48 @@
-public class CursoTecnico extends Curso {  
- 
-    private String eixoTecnologico;
-    private boolean estagioObrigatorio;
- 
-    public CursoTecnico(String nome, String modalidade, String status,
-                        String eixoTecnologico, boolean estagioObrigatorio) {
-  
-        super(nome, modalidade, status);
-        this.eixoTecnologico    = eixoTecnologico;
-        this.estagioObrigatorio = estagioObrigatorio;
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.cursos;
+
+/**
+ *
+ * @author aluno
+ */
+public class CursoTecnico extends Curso {
+    private String eixoTec;
+    private int cargahoraria;
+    
+    
+    public void verificarEstagio(){
+        
     }
- 
-    public void verificarEstagio() {
-        if (estagioObrigatorio) {
-            System.out.println("Este curso EXIGE estágio.");
-        } else {
-            System.out.println("Este curso NÃO exige estágio.");
-        }
+
+    public String getEixoTec() {
+        return eixoTec;
     }
+
+    public void setEixoTec(String eixoTec) {
+        this.eixoTec = eixoTec;
+    }
+
+    public int getCargahoraria() {
+        return cargahoraria;
+    }
+
+    public void setCargahoraria(int cargahoraria) {
+        this.cargahoraria = cargahoraria;
+    }
+    
+    
+    
+    
+    
+
+    @Override
+    public void matricular() {
+        
+    }
+    
+    
+    
 }
