@@ -1,22 +1,85 @@
- public class Curso {
- 
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.cursos;
+
+import java.util.ArrayList;
+import java.util.List;
+
+                                                                                                                                                                                            
+public abstract class Curso {
+    private int codigo;
     private String nome;
-    private String modalidade; 
-    private String status;    
- 
-   
-    public Curso(String nome, String modalidade, String status) {
-        this.nome       = nome;
+    private int chTotal;
+    private int duracao;
+    private String tipoDuracao;
+    private String modalidade;
+    private boolean status;
+    private List<Disciplina> disciplinas = new ArrayList<Disciplina>();
+
+    public int getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getChTotal() {
+        return chTotal;
+    }
+
+    public void setChTotal(int chTotal) {
+        this.chTotal = chTotal;
+    }
+
+    public int getDuracao() {
+        return duracao;
+    }
+
+    public void setDuracao(int duracao) {
+        this.duracao = duracao;
+    }
+
+    public String getTipoDuracao() {
+        return tipoDuracao;
+    }
+
+    public void setTipoDuracao(String tipoDuracao) {
+        this.tipoDuracao = tipoDuracao;
+    }
+
+    public String getModalidade() {
+        return modalidade;
+    }
+
+    public void setModalidade(String modalidade) {
         this.modalidade = modalidade;
-        this.status     = status;
     }
- 
-    public void obterDisciplinas() {
-        System.out.println("Buscando disciplinas do curso: " + nome);
+
+    public boolean isStatus() {
+        return status;
     }
- 
-    public void obterAlunosAtivos() {
-        System.out.println("Buscando alunos ativos do curso: " + nome);
+
+    public void setStatus(boolean status) {
+        this.status = status;
     }
+    
+    
+     
+    public abstract void matricular();
+    
+    
+    
+    
+    
 }
- 
